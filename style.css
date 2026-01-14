@@ -56,9 +56,9 @@ ul>li:hover{
 }
 ul{
     list-style-type: none;
-    margin:0;
+   
     padding: 0%;
-    display: flex;
+    
 }
 li{
    margin-right:15px;
@@ -66,9 +66,11 @@ li{
 }
 h1{
     margin: 0;
+
 }
 .nav-bar{
     display: flex;
+    margin-left: 20%;
     justify-content: space-between;
     align-items: center;
     width: 80%;
