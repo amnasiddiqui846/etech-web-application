@@ -30,7 +30,7 @@ button:hover{
 
 .nav-bar{
             
-            margin-left: 100px;
+            margin-left: 90px;
 }
 .nav-list{
     list-style-type: none;
@@ -42,7 +42,7 @@ button:hover{
     margin-left: 50px;
 }
 .nav-list>li{
-   margin-right:25px;
+   margin-right:20px;
 }
 .nav-list>li>a{
     color: black;
@@ -75,8 +75,8 @@ button:hover{
    
 }
 .search-course{
-    display: flex;
-    justify-content: center;
+    display: block;
+    justify-items: center;
     margin-right: 10px;
     color: darkmagenta;
 }
@@ -91,6 +91,49 @@ input{
     width: 300px;
     padding: 8px;
     border-radius: 5px;
+}
+.hero-section{
+    display: flex;
+    justify-content: center;
+}
+.hero-section>image{
+    width: 200px;
+    height: 200px;
+    
+}
+.text-container{
+   /* border: 2px solid blue; */
+   padding-left: 50px;
+  justify-items: baseline;
+  
+}
+
+.text-container>h1{
+text-align: center; 
+font-size: 40px;
+padding: 0;
+ max-width: 14ch; 
+line-height: 1.2;
+ color:darkmagenta;
+
+}
+
+.text-container>p{
+  max-width: 50ch; 
+  line-height: 1.3;
+}
+.brand-list{
+   display: flex;            
+  flex-direction: row;                  
+  justify-content: center; 
+  background-color: darkmagenta; 
+  list-style: none;
+  
+}
+.brand-list>ul{
+    display: flex;
+    margin-right: 20px;
+    gap: 150px;
 }
 
 .popular-courses>h2{
