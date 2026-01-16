@@ -145,21 +145,14 @@ input{
     padding: 8px;
     border-radius: 5px;
 }
-.benefit-text>h2{
-    color: darkmagenta;
-    text-decoration: underline;
-
-}
-.benefit-card{
-    padding: 0;
-}
-.benefit-card>.benefit-tittle{
+.benefit{
 display: flex;
-gap: 10px;
-text-align: center;
+gap: 40px;
+align-items: center;
 }
+  
 
-.benefit-tittle>.hero-blob{
+.benefit-image>.hero-blob{
     border-radius: 50%;
     border: 2px solid darkmagenta;
   width: 3vw;
@@ -167,15 +160,35 @@ text-align: center;
   object-fit: contain;
  
 }
-.benefit-card>.benefit-tittle>h3{
-    color: darkmagenta;  
+.card{
+    display: flex;
+    gap:20px;
+    align-items: center;
 }
-.benefit-text>.p{
-    padding: 0;
+
+.card>.benefit-text>h3{
+    color: darkmagenta; 
     margin: 0;
-    margin-left: 20px;
 }
+.card>.benefit-text>p{
+    margin: 10px;
+}
+
+h2{
+    color: darkmagenta;
+}
+
 .popular-courses>h2{
 display: flex;
-justify-content: space-between;
+justify-content: center;
+}
+.courses{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.courses>.course-card{
+    border: 2px solid blue;
+    width: fit-content;
+    height: fit-content;
 }
