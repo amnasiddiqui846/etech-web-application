@@ -2,6 +2,7 @@ body{
     background-color: rgb(245, 245, 245);
     padding:20px;
     margin: 0px;
+    font: 1em sans-serif;
     /* box-sizing: border-box; */
 }
  .header{
@@ -26,22 +27,34 @@ button:hover{
     color :black;
     transition: 0.5sec;
 }
+
+.nav-bar{
+            
+            margin-left: 100px;
+}
 .nav-list{
     list-style-type: none;
     display: flex;
-    padding: 0%;
-    
+    /* padding: 0%; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
 }
 .nav-list>li{
-   margin-right:15px;
+   margin-right:25px;
 }
 .nav-list>li>a{
     color: black;
+    margin-left: 40px;
+    text-decoration: none;
 }
 .nav-list>li>a:hover{
     color: darkmagenta;
     transition: 0.5sec ;
+    text-decoration: underline;
     cursor: pointer;
+    
 }
 .header{
     margin: 0;
@@ -55,17 +68,32 @@ button:hover{
     width: 80%;
 }
 
-.hero-section{
-    color: darkmagenta;
+.hero-section>.text>pre{
+   color: darkmagenta;
+   font-size: 24px;
+   font-weight: bolder;
+   
 }
 .search-course{
     display: flex;
     justify-content: center;
     margin-right: 10px;
+    color: darkmagenta;
 }
+.search-course>button{
+ margin-left: 15px;
+}
+
 input{
-    border: 2px solid darkmagenta;
-    width:50%;
+    border: 2px solid black;
+     transition: border-color 0.3s ease;
+    outline: none;
+    width: 300px;
     padding: 8px;
     border-radius: 5px;
+}
+
+.popular-courses>h2{
+display: flex;
+justify-content: space-between;
 }
