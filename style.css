@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(255, 255, 255);
     padding:20px;
     margin: 0px;
     font: 1em sans-serif;
@@ -20,6 +20,7 @@ button{
     border-radius: 4px;
     border: 2px solid darkmagenta;
     color: darkmagenta;
+    background-color: white;
     
 }
 button:hover{
@@ -68,30 +69,6 @@ button:hover{
     width: 80%;
 }
 
-.hero-section>.text>pre{
-   color: darkmagenta;
-   font-size: 24px;
-   font-weight: bolder;
-   
-}
-.search-course{
-    display: block;
-    justify-items: center;
-    margin-right: 10px;
-    color: darkmagenta;
-}
-.search-course>button{
- margin-left: 15px;
-}
-
-input{
-    border: 2px solid black;
-     transition: border-color 0.3s ease;
-    outline: none;
-    width: 300px;
-    padding: 8px;
-    border-radius: 5px;
-}
 .hero-section{
     display: flex;
     justify-content: center;
@@ -122,20 +99,82 @@ line-height: 1.2;
   max-width: 50ch; 
   line-height: 1.3;
 }
+
+
 .brand-list{
+    padding: 0;
    display: flex;            
   flex-direction: row;                  
   justify-content: center; 
   background-color: darkmagenta; 
   list-style: none;
+overflow: hidden;
   
 }
 .brand-list>ul{
     display: flex;
     margin-right: 20px;
     gap: 150px;
+    animation: scroll 10s linear infinite;
 }
 
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-20%); /* List jab aadhi (50%) guzar jaye toh reset ho jaye */
+  }
+}
+.search-course{
+    display: block;
+    justify-items: center;
+    margin-right: 10px;
+    /* color: darkmagenta; */
+}
+.search-course>button{
+ margin-left: 15px;
+}
+
+input{
+    border: 2px solid black;
+     transition: border-color 0.3s ease;
+    outline: none;
+    width: 300px;
+    padding: 8px;
+    border-radius: 5px;
+}
+.benefit-text>h2{
+    color: darkmagenta;
+    text-decoration: underline;
+
+}
+.benefit-card{
+    padding: 0;
+}
+.benefit-card>.benefit-tittle{
+display: flex;
+gap: 10px;
+text-align: center;
+}
+
+.benefit-tittle>.hero-blob{
+    border-radius: 50%;
+    border: 2px solid darkmagenta;
+  width: 3vw;
+  height: 3vw;
+  object-fit: contain;
+ 
+}
+.benefit-card>.benefit-tittle>h3{
+    color: darkmagenta;  
+}
+.benefit-text>.p{
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+}
 .popular-courses>h2{
 display: flex;
 justify-content: space-between;
