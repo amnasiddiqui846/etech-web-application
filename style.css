@@ -221,7 +221,7 @@ text-decoration: underline;
 }
 .courses{  
     display: flex;
-    /* gap: 40px; */
+    gap: 40px;
     justify-content: center;
 }
 .courses>.course-card{
